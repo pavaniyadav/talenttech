@@ -6,6 +6,7 @@
   - name: create vpc
     ec2_vpc_net:
       state: present
+      name: myvpc100
       cidr_block: 192.168.0.0/16
       resource_tags: { "Env":"Dev" }
       region: us-east-1

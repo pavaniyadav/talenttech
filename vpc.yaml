@@ -1,6 +1,7 @@
 ---
 - name: creating vpc
-  hosts: all
+  hosts: local
+  become: yes
   tasks: 
   - name: create vpc
     ec2_vpc_net:

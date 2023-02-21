@@ -1,13 +1,11 @@
 ---
 - name: creating vpc
   hosts: localhost
-  become: yes
-  become_user: root
   tasks: 
-- ec2_vpc:
-        state: present
-        cidr_block: 192.168.0.0/16
-        resource_tags: { "Env":"Dev" }
-        region: us-east-1
-        aws_access_key: AKIAUQROPKVCTF2VHD42
-        aws_secret_key: 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
+  - ec2_vpc:
+      state: present
+      cidr_block: 192.168.0.0/16
+      resource_tags: { "Env":"Dev" }
+      region: us-east-1
+      aws_access_key: AKIAUQROPKVCTF2VHD42
+      aws_secret_key: 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

@@ -1,6 +1,6 @@
 ---
 - name: creating vpc
-  hosts: local
+  hosts: localhost
   become: yes
   tasks: 
   - name: create vpc
